@@ -1,0 +1,26 @@
+
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Password</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{range .data}}
+        <tr>
+            <td>{{.ID}}</td>
+            <td>{{.Name}}</td>
+            <td>{{.Age}}</td>
+            <td>{{.Address}}</td>
+            <td>{{.Password}}</td>
+            <td>{{.Email}}</td>
+        </tr>
+        {{end}}
+    </tbody>
+</table>

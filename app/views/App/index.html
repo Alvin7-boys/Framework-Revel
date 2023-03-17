@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Perkalian</title>
+	</head>
+	<body>
+		<h1>Perkalian</h1>
+		<form action="/math/multiply" method="POST">
+			<label for="num1">Bilangan 1:</label>
+			<input type="number" name="num1" id="num1" required>
+			<label for="num2">Bilangan 2:</label>
+			<input type="number" name="num2" id="num2" required>
+			<input type="submit" value="Hitung">
+		</form>
+		{{if .}}
+			<p>Hasil perkalian: {{.}}</p>
+		{{end}}
+	</body>
+</html>
